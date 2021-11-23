@@ -1,0 +1,39 @@
+@import "breakpoints";
+
+footer {
+  background: rgba(0, 0, 0, 0.87);
+  height: 228px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  div.logo {
+
+
+    img {
+      height: 100px;
+
+    @include xs {
+      height: 100px;
+    }
+    }
+  }
+
+  div.social {
+    ul {
+      display: flex;
+      flex-direction: row;
+      color: white;
+      list-style: none;
+      padding: 0;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        line-height: 24px;
+        font-size: 16px;
+      }
+    }
+  }
+}
