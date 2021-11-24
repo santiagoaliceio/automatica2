@@ -1,15 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MemberPageComponent } from './member-page/member-page.component';
+import { MemberPageComponent } from './components/member-page/member-page.component';
+import { MemberInfoComponent } from './components/member-info/member-info.component';
+import { RootModule } from '../root/root.module';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
   declarations: [
-    MemberPageComponent
+    MemberPageComponent,
+    MemberInfoComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RootModule,
+    RouterModule,
+    
   ]
 })
 export class MemberModule { }

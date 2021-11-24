@@ -16,7 +16,7 @@ import { RootModule } from './modules/root/root.module';
 BrowserModule,
     AppRoutingModule,
     SharedModule,
-    RootModule
+    RootModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
