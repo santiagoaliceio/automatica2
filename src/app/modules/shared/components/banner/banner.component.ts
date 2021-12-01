@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BannerComponent implements OnInit {
 
   constructor() { }
-  @Input() imgUrl: string = ''
+  @Input() imgUrl: string =  ''
   @Input() subtitle: string = ''
   @Input() ig: string = ''
   @Input()  fb: string = ''

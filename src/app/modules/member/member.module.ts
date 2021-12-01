@@ -4,6 +4,7 @@ import { MemberPageComponent } from './components/member-page/member-page.compon
 import { MemberInfoComponent } from './components/member-info/member-info.component';
 import { RootModule } from '../root/root.module';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     RootModule,
     RouterModule,
-    
+    SharedModule
+
   ]
 })
 export class MemberModule { }

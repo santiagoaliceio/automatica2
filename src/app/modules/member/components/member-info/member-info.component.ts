@@ -19,36 +19,41 @@ export class MemberInfoComponent implements OnInit {
     {
       id: '1',
       nombre: 'Mancuso',
-      imagen1: './assets/logo-clean.png',
-      imagen2: 'img2',
-      imagen3: 'img3',
-      imagen4: 'img4',
+      bannerImg: './assets/images/mancuso/mancuso-banner.jpg',
+      imagen1: './assets/images/mancuso/1.jpg',
+      imagen2: './assets/images/mancuso/2.jpg',
+      imagen3: './assets/images/mancuso/3.jpg',
+      imagen4: './assets/images/mancuso/4.jpg',
+
     },
     {
       id: '2',
-      nombre: 'Santiago',
-      imagen1: 'img1',
-      imagen2: 'img2',
-      imagen3: 'img3',
-      imagen4: 'img4',
+      nombre: 'Santiago Aliceio',
+      bannerImg: './assets/images/santi/santi-banner.jpg',
+      imagen1: './assets/images/santi/1.jpg',
+      imagen2: './assets/images/santi/2.jpg',
+      imagen3: './assets/images/santi/3.jpg',
+      imagen4: './assets/images/santi/4.png',
     },
     {
       id: '3',
-      nombre: 'Garza',
+      nombre: 'Enrique Sosa',
+      bannerImg: '',
       imagen1: 'img1',
       imagen2: 'img2',
       imagen3: 'img3',
       imagen4: 'img4',
     }, {
       id: '4',
-      nombre: 'Pitu',
+      nombre: 'Gustavo Tort',
+      bannerImg: '',
       imagen1: 'img1',
       imagen2: 'img2',
       imagen3: 'img3',
       imagen4: 'img4',
     }
-  ] 
-  
+  ]
+
   integranteId: number
   integrante: Integrantes
 
@@ -66,14 +71,14 @@ export class MemberInfoComponent implements OnInit {
   }
 
   mancuso() {
-    this.router.navigate([], { 
+    this.router.navigate([], {
       relativeTo: this.activatedRoute,
       queryParams: { integrante: 1 },
       queryParamsHandling: 'merge' })
   }
 
   santi() {
-    this.router.navigate([], { 
+    this.router.navigate([], {
       relativeTo: this.activatedRoute,
       queryParams: { integrante: 2 },
       queryParamsHandling: 'merge' })

@@ -1,12 +1,12 @@
-<div >
-    <img class="logo" src="../../../../../assets/logo_automatica2.png" alt="">
-    <h1>{{subtitle}}</h1>
-    <div class="banner-content">
-      <ul>
-        <li><i class="fa fa-instagram"></i> @{{ig}}</li>
-        <li><i class="fa fa-facebook-square"></i></li>
-        <li></li>
-      </ul>
-    </div>
-    <img class="banner-img" [src]="imgUrl" alt="">
+<div [ngStyle]="{'background-image': 'url(' + imgUrl + ')'}">
+
+  <div class="banner-content">
+  <img class="logo" src="../../../../../assets/logo.png" alt="">
+  <h2>{{subtitle}}</h2>
+    <ul>
+      <li *ngIf="ig != ''"><i class="fa fa-instagram"></i> @{{ig}}</li>
+      <li *ngIf="fb != ''"><i class="fa fa-facebook-square"></i> {{fb}}</li>
+      <li></li>
+    </ul>
+  </div>
 </div>

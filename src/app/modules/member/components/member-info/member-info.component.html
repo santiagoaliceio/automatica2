@@ -1,8 +1,15 @@
+<app-banner subtitle="{{integrante.nombre}}" imgUrl="{{integrante.bannerImg}}"></app-banner>
 <div class="container">
   {{integrante.nombre}}
-    <img [src]="integrante.imagen1" alt="">
-
-    <button (click)="mancuso()">Mancuso</button>
-    <button (click)="santi()">Santi</button>
+  <button (click)="mancuso()">Mancuso</button>
+  <button (click)="santi()">Santi</button>
+  <div class="row">
+    <app-card class="col-6" cardImg={{integrante.imagen1}}></app-card>
+    <app-card class="col-6" cardImg={{integrante.imagen2}}></app-card>
+  </div>
+  <div class="row">
+    <app-card class="col-6" cardImg={{integrante.imagen3}}></app-card>
+    <app-card class="col-6" cardImg={{integrante.imagen4}}></app-card>
+  </div>
 
 </div>

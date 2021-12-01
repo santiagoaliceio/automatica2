@@ -7,7 +7,7 @@ import { MemberPageComponent } from '../member/components/member-page/member-pag
 
 const routes: Route[] = [
   { path: '', component: MemberInfoComponent },
-  { path: 'banda', component: MemberPageComponent }
+  { path: 'banda', component: MemberPageComponent },
 ]
 
 @NgModule({

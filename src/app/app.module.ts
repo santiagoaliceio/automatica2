@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './modules/shared/shared.module';
 import { RootComponent } from './components/root/root.component';
 import { RootModule } from './modules/root/root.module';
+import { MemberModule } from './modules/member/member.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ BrowserModule,
     AppRoutingModule,
     SharedModule,
     RootModule,
+    MemberModule
   ],
   providers: [],
   bootstrap: [AppComponent]
