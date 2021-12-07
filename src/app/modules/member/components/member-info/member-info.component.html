@@ -1,8 +1,12 @@
 <app-banner subtitle="{{integrante.nombre}}" imgUrl="{{integrante.bannerImg}}"></app-banner>
+<div class="menu">
+    <a (click)="mancuso()">Mancuso</a>
+    <a (click)="enriqueSosa()">Enrique Sosa</a>
+    <a (click)="gustavoTort()">Gustavo Tort</a>
+  <a (click)="santiagoAliceio()">Santigo Aliceio</a>
+
+</div>
 <div class="container">
-  {{integrante.nombre}}
-  <button (click)="mancuso()">Mancuso</button>
-  <button (click)="santi()">Santi</button>
   <div class="row">
     <app-card class="col-6" cardImg={{integrante.imagen1}}></app-card>
     <app-card class="col-6" cardImg={{integrante.imagen2}}></app-card>

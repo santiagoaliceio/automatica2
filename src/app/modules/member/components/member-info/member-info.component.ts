@@ -67,7 +67,9 @@ export class MemberInfoComponent implements OnInit {
     })
     console.log(this.integrante)
     this.mancuso
-    this.santi
+    this.santiagoAliceio
+    this.enriqueSosa
+    this.gustavoTort
   }
 
   mancuso() {
@@ -77,11 +79,24 @@ export class MemberInfoComponent implements OnInit {
       queryParamsHandling: 'merge' })
   }
 
-  santi() {
+  santiagoAliceio() {
     this.router.navigate([], {
       relativeTo: this.activatedRoute,
       queryParams: { integrante: 2 },
       queryParamsHandling: 'merge' })
   }
 
+
+  enriqueSosa() {
+    this.router.navigate([], {
+      relativeTo: this.activatedRoute,
+      queryParams: { integrante: 3 },
+      queryParamsHandling: 'merge' })
+  }
+  gustavoTort() {
+    this.router.navigate([], {
+      relativeTo: this.activatedRoute,
+      queryParams: { integrante: 4 },
+      queryParamsHandling: 'merge' })
+  }
 }

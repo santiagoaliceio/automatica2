@@ -7,20 +7,19 @@ import { SharedModule } from './modules/shared/shared.module';
 import { RootComponent } from './components/root/root.component';
 import { RootModule } from './modules/root/root.module';
 import { MemberModule } from './modules/member/member.module';
+import { InfoModule } from './modules/info/info.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    RootComponent,
-  ],
+  declarations: [AppComponent, RootComponent],
   imports: [
-BrowserModule,
+  BrowserModule,
     AppRoutingModule,
     SharedModule,
     RootModule,
-    MemberModule
+    MemberModule,
+    InfoModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

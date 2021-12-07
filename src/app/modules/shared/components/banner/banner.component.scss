@@ -21,6 +21,10 @@ div {
 
 
   div.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 30px;
     bottom: 0;
     color: white;

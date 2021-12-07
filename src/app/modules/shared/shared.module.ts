@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CardComponent } from './components/card/card.component';
+import { CardTxtComponent } from './components/card-txt/card-txt.component';
 
 
 
@@ -13,9 +14,10 @@ import { CardComponent } from './components/card/card.component';
     FooterComponent,
     BannerComponent,
     CardComponent,
+    CardTxtComponent,
   ],
   imports: [
-    CommonModule
+  CommonModule
   ],
 
   exports: [
@@ -23,6 +25,7 @@ import { CardComponent } from './components/card/card.component';
     FooterComponent,
     BannerComponent,
     CardComponent,
+    CardTxtComponent,
   ]
 })
 export class SharedModule { }

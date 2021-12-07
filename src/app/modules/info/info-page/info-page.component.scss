@@ -1,0 +1,9 @@
+div.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+div.row {
+    flex-wrap: nowrap;
+    margin-bottom: 1em;
+    --bs-gutter-x: 0;
+  }
+}
