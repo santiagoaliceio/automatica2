@@ -48,9 +48,13 @@ header {
     }
   }
   li {
-    margin-left: 10px;
+    margin-left: 15px;
 
-    @include ltesm {
+    @include sm {
+      margin-left: 10px;
+    }
+
+    @include xs {
       margin-left: 5px;
     }
   }

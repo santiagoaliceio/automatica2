@@ -38,19 +38,19 @@ export class MemberInfoComponent implements OnInit {
     {
       id: '3',
       nombre: 'Enrique Sosa',
-      bannerImg: '',
-      imagen1: 'img1',
+      bannerImg: './assets/images/garza/garza-banner.jpg',
+      imagen1: './assets/images/garza/1.png',
       imagen2: 'img2',
       imagen3: 'img3',
-      imagen4: 'img4',
+      imagen4: './assets/images/garza/4.png',
     }, {
       id: '4',
       nombre: 'Gustavo Tort',
-      bannerImg: '',
-      imagen1: 'img1',
-      imagen2: 'img2',
-      imagen3: 'img3',
-      imagen4: 'img4',
+      bannerImg: './assets/images/pitu/pitu-banner.png',
+      imagen1: './assets/images/pitu/1.png',
+      imagen2: './assets/images/pitu/2.png',
+      imagen3: './assets/images/pitu/3.png',
+      imagen4: './assets/images/pitu/4.png',
     }
   ]
 
