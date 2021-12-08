@@ -6,23 +6,49 @@ footer {
   display: flex;
   width: 100%;
   align-items: center;
-  flex-direction: column;
   justify-content: space-between;
   color: white;
-  padding: 10px 20px;
+  padding:  20px;
+
+  @include xs {
+    flex-direction: column;
+  }
 
   img {
-    width: 50%;
+    width: 15%;
     height: auto;
+
+    @include xs {
+      width: 50%;
+    }
   }
   ul {
     list-style: none;
     padding: 0;
     display: flex;
+    margin: 0;
     font-size: 8px;
+
+@include sm {
+  font-size: 10px;
+}
+
+@include gtemd {
+  font-size: 1rem;
+}
+
+
+    i{
+      margin-right: 5px;
+    }
     li {
       display: inline-flex;
       margin: 5px;
+      align-items: center;
+
+      @include xs {
+        margin: 2px;
+      }
     }
   }
 }

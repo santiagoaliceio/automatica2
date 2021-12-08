@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CardComponent } from './components/card/card.component';
 import { CardTxtComponent } from './components/card-txt/card-txt.component';
+import { InfoBannerComponent } from './components/info-banner/info-banner.component';
 
 
 
@@ -15,6 +16,7 @@ import { CardTxtComponent } from './components/card-txt/card-txt.component';
     BannerComponent,
     CardComponent,
     CardTxtComponent,
+    InfoBannerComponent,
   ],
   imports: [
   CommonModule
@@ -26,6 +28,7 @@ import { CardTxtComponent } from './components/card-txt/card-txt.component';
     BannerComponent,
     CardComponent,
     CardTxtComponent,
+    InfoBannerComponent
   ]
 })
 export class SharedModule { }

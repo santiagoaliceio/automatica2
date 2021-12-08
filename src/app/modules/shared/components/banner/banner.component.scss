@@ -8,6 +8,10 @@ div {
   min-height: 300px;
   background-position: center;
 
+  @include gtemd {
+    min-height: 500px;
+  }
+
   img.logo {
     @include gtesm {
       width: 50%;
