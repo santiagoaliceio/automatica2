@@ -1,6 +1,7 @@
 @import "breakpoints";
 
 footer {
+  position: absolute;
   background: rgba(0, 0, 0, 1);
   height: auto;
   display: flex;
@@ -10,10 +11,18 @@ footer {
   color: white;
   padding:  20px;
 
+
   @include xs {
     flex-direction: column;
   }
+a{
+  text-decoration: none;
+  color: white;
 
+  :visited{
+    color: inherit;
+  }
+}
   img {
     width: 15%;
     height: auto;
@@ -43,11 +52,11 @@ footer {
     }
     li {
       display: inline-flex;
-      margin: 5px;
+      margin: 0 5px;
       align-items: center;
 
       @include xs {
-        margin: 2px;
+        margin: 0 2px;
       }
     }
   }

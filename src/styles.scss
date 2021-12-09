@@ -8,6 +8,7 @@ body {
   font-family:'Rationale' , sans-serif;
   display: flex;
   background: url(./assets/images/bg/fondo.jpg) top center;
+  background-repeat: round;
   app-root {
     flex: 1;
   }

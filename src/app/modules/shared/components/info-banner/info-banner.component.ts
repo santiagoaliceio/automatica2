@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-info-banner',
@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class InfoBannerComponent implements OnInit {
 
   constructor() { }
+
+  @Input() imgUrl: string = ''
 
   ngOnInit(): void {
   }

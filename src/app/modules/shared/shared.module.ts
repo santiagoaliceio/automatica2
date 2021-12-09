@@ -28,7 +28,7 @@ import { InfoBannerComponent } from './components/info-banner/info-banner.compon
     BannerComponent,
     CardComponent,
     CardTxtComponent,
-    InfoBannerComponent
+    InfoBannerComponent,
   ]
 })
 export class SharedModule { }

@@ -17,7 +17,7 @@ import { InfoModule } from './modules/info/info.module';
     SharedModule,
     RootModule,
     MemberModule,
-    InfoModule
+    InfoModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
