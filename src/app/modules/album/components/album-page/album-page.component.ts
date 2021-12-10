@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { combineLatest } from 'rxjs';
 import { Album } from './../../../../interfaces/album.interface';
@@ -16,6 +17,7 @@ export class AlbumPageComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
+    private sanitizer: DomSanitizer,
     ) {}
 
 
@@ -35,7 +37,7 @@ export class AlbumPageComponent implements OnInit {
       title: 'Oscuro Elixir',
       cover: './assets/images/albums/oscuro-elixir/oscuro-elixir.jpg',
       image1: '',
-      spotify: 'https://open.spotify.com/embed/album/4IWtimmFG2uVkBQr9dLTIk?utm_source=generator',
+      spotify: this.sanitizer.bypassSecurityTrustResourceUrl('https://open.spotify.com/embed/album/4IWtimmFG2uVkBQr9dLTIk?utm_source=generator'),
     },
 
     {
