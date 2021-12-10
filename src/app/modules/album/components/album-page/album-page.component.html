@@ -1,0 +1,16 @@
+<app-banner [subtitle]="album.title" [imgUrl]="album.image1"></app-banner>
+<div class="menu">
+  <a (click)="dondeEstas()">Donde Estás</a>
+  <a (click)="oscuroElixir()">Oscuro Elixir</a>
+  <a (click)="satelites()">Satélites</a>
+</div>
+<div class="overlay"></div>
+  <video src="/assets/video/Automatica_prensa_2018_1_compressed.mp4" autoplay [muted]="'muted'" loop>
+  </video>
+<div class="container">
+  <img [src]="album.cover" alt="">
+  <iframe [src]="album.spotify" width="100%"
+    height="380" frameBorder="0" allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+

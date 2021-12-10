@@ -1,0 +1,50 @@
+@import "breakpoints";
+div {
+  width: 100%;
+  height: auto;
+  background-position: bottom center;
+  background-size: cover;
+  position: relative;
+  min-height: 100%;
+  background-position: center;
+
+  @include gtemd {
+    min-height: 700px;
+  }
+
+
+
+  img.logo {
+    @include gtesm {
+      width: 50%;
+    }
+    top: 0;
+    width: 100%;
+    margin-bottom: 30px;
+
+  }
+
+
+
+  div.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    background:  rgba(0, 0, 0, 0.6);
+
+    ul {
+      list-style: none;
+      padding: 0 15px;
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

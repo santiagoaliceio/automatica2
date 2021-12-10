@@ -1,0 +1,23 @@
+<app-banner subtitle="{{integrante.nombre}}" imgUrl="{{integrante.bannerImg}}"></app-banner>
+<div class="menu">
+    <a (click)="mancuso()">Mancuso</a>
+    <a (click)="enriqueSosa()">Enrique Sosa</a>
+    <a (click)="gustavoTort()">Gustavo Tort</a>
+  <a (click)="santiagoAliceio()">Santigo Aliceio</a>
+
+</div>
+<div class="overlay"></div>
+
+<video src="/assets/video/Automatica_prensa_2018_1_compressed.mp4" autoplay [muted]="'muted'" loop>
+</video>
+<div class="container">
+  <div class="row">
+    <app-card class="col-6" cardImg={{integrante.imagen1}}></app-card>
+    <app-card class="col-6" cardImg={{integrante.imagen2}}></app-card>
+  </div>
+  <div class="row">
+    <app-card class="col-6" cardImg={{integrante.imagen3}}></app-card>
+    <app-card class="col-6" cardImg={{integrante.imagen4}}></app-card>
+  </div>
+
+</div>
