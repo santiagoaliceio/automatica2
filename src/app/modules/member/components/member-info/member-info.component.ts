@@ -6,16 +6,12 @@ import { Integrantes } from 'src/app/interfaces/integrantes.interface';
 @Component({
   selector: 'app-member-info',
   templateUrl: './member-info.component.html',
-  styleUrls: ['./member-info.component.scss']
+  styleUrls: ['./member-info.component.scss'],
 })
 export class MemberInfoComponent implements OnInit {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
 
-  constructor(
-    private activatedRoute: ActivatedRoute,
-    private router: Router,
-  ) { }
-
-  integrantes:any = [
+  integrantes: any = [
     {
       id: '1',
       nombre: 'Mancuso',
@@ -24,7 +20,6 @@ export class MemberInfoComponent implements OnInit {
       imagen2: './assets/images/mancuso/2.jpg',
       imagen3: './assets/images/mancuso/3.jpg',
       imagen4: './assets/images/mancuso/4.jpg',
-
     },
     {
       id: '2',
@@ -43,7 +38,8 @@ export class MemberInfoComponent implements OnInit {
       imagen2: 'img2',
       imagen3: 'img3',
       imagen4: './assets/images/garza/4.png',
-    }, {
+    },
+    {
       id: '4',
       nombre: 'Gustavo Tort',
       bannerImg: './assets/images/pitu/pitu-banner.png',
@@ -51,52 +47,55 @@ export class MemberInfoComponent implements OnInit {
       imagen2: './assets/images/pitu/2.png',
       imagen3: './assets/images/pitu/3.png',
       imagen4: './assets/images/pitu/4.png',
-    }
-  ]
+    },
+  ];
 
-  integranteId: number
-  integrante: Integrantes
+  integranteId: number;
+  integrante: Integrantes;
 
   ngOnInit(): void {
     combineLatest([
       this.activatedRoute.queryParamMap,
       this.activatedRoute.paramMap,
     ]).subscribe(([queryParamMap, paramMap]) => {
-      this.integranteId = +(queryParamMap.get('integrante') || '')
-      this.integrante = this.integrantes[this.integranteId - 1]
-    })
-    console.log(this.integrante)
-    this.mancuso
-    this.santiagoAliceio
-    this.enriqueSosa
-    this.gustavoTort
+      this.integranteId = +(queryParamMap.get('integrante') || '');
+      this.integrante = this.integrantes[this.integranteId - 1];
+    });
+    console.log(this.integrante);
+    this.mancuso;
+    this.santiagoAliceio;
+    this.enriqueSosa;
+    this.gustavoTort;
   }
 
   mancuso() {
     this.router.navigate([], {
       relativeTo: this.activatedRoute,
       queryParams: { integrante: 1 },
-      queryParamsHandling: 'merge' })
+      queryParamsHandling: 'merge',
+    });
   }
 
   santiagoAliceio() {
     this.router.navigate([], {
       relativeTo: this.activatedRoute,
       queryParams: { integrante: 2 },
-      queryParamsHandling: 'merge' })
+      queryParamsHandling: 'merge',
+    });
   }
-
 
   enriqueSosa() {
     this.router.navigate([], {
       relativeTo: this.activatedRoute,
       queryParams: { integrante: 3 },
-      queryParamsHandling: 'merge' })
+      queryParamsHandling: 'merge',
+    });
   }
   gustavoTort() {
     this.router.navigate([], {
       relativeTo: this.activatedRoute,
       queryParams: { integrante: 4 },
-      queryParamsHandling: 'merge' })
+      queryParamsHandling: 'merge',
+    });
   }
 }

@@ -5,10 +5,12 @@ import { Route, RouterModule } from '@angular/router';
 import { MemberInfoComponent } from '../member/components/member-info/member-info.component';
 import { MemberPageComponent } from '../member/components/member-page/member-page.component';
 import { InfoPageComponent } from '../info/info-page/info-page.component';
+import { AlbumPageComponent } from '../album/components/album-page/album-page.component';
 
 const routes: Route[] = [
   { path: '', component: InfoPageComponent },
   { path: 'banda', component: MemberInfoComponent },
+  {path: 'album', component: AlbumPageComponent}
 ]
 
 @NgModule({
@@ -16,7 +18,7 @@ const routes: Route[] = [
     RootComponent
   ],
   imports: [
-    CommonModule,
+  CommonModule,
     RouterModule.forChild(routes),
 
   ]
