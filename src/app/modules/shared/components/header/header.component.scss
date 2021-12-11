@@ -6,6 +6,9 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px 30px;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
   a {
     cursor: pointer;
   }
@@ -83,7 +86,6 @@ div.buttons {
     padding: 10px;
     text-decoration: none;
     color: white;
-    font-family: "Rationale", sans-serif;
     width: 100%;
   }
 }

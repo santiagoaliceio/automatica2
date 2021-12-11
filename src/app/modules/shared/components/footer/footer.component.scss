@@ -29,6 +29,7 @@ a{
 
     @include ltesm {
       width: 50%;
+      margin-bottom: 10px;
     }
   }
   ul {
@@ -41,7 +42,7 @@ a{
     justify-content: flex-end;
 
     @include ltesm {
-      justify-content: space-between;
+      justify-content: center;
     }
 
 
@@ -60,6 +61,7 @@ a{
     }
     li {
       margin: 0 5px;
+
 
       @include xs {
         margin: 0 2px;
