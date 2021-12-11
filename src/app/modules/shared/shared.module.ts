@@ -32,7 +32,6 @@ CommonModule,
     CardComponent,
     CardTxtComponent,
     InfoBannerComponent,
-
   ]
 })
 export class SharedModule { }
