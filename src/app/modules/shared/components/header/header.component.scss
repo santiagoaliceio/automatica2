@@ -6,6 +6,9 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px 30px;
+  a {
+    cursor: pointer;
+  }
 
   i {
     font-size: 25px;
