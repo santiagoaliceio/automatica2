@@ -27,6 +27,24 @@ video {
 
 .row {
   margin-bottom: 10px;
+  @include xs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    --bs-gutter-x: 0;
+    margin-bottom: 0;
+    .col-6 {
+      @include xs {
+        width: 100%;
+      }
+    }
+
+    app-card {
+      @include xs {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
 
 div.menu {
@@ -39,9 +57,9 @@ div.menu {
   text-align: center;
   margin-bottom: 20px;
 
-@include ltesm {
-  font-size: 1rem;
-}
+  @include ltesm {
+    font-size: 1rem;
+  }
 
   @include xs {
     font-size: 12px;
@@ -51,20 +69,25 @@ div.menu {
     padding: 15px;
     width: 100%;
     cursor: pointer;
+      border-right: 1px solid;
+
+    &:last-child {
+      border-right: none;
+    }
+
     @include xs {
       padding: 15px 5px;
     }
   }
-
-
 
   :hover {
     background-color: white;
     color: black;
   }
 
+  :link,
   :active {
     background-color: white;
-    color: white;
+    color: black;
   }
 }

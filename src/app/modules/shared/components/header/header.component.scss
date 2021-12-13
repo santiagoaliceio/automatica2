@@ -64,7 +64,11 @@ div.mat-menu {
     }
   }
   li {
-    margin-left: 15px;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    padding: 0 10px;
+
+
 
     @include sm {
       margin-left: 10px;

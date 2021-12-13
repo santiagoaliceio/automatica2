@@ -2,14 +2,33 @@
 
 
 div.container {
-  margin-top: 50px;
-  margin-bottom: 50px;
-div.row {
-    flex-wrap: nowrap;
-    margin-bottom: 1em;
-    --bs-gutter-x: 0;
-  }
-}
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+
+
+  .row {
+    margin-bottom: 10px;
+    @include xs {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      --bs-gutter-x: 0;
+      margin-bottom: 0;
+      .col-6 {
+        @include xs {
+          width: 100%;
+        }
+
+      }
+
+      app-card {
+        @include xs {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }}
 div.menu{
   background-color: black;
   display: flex;
