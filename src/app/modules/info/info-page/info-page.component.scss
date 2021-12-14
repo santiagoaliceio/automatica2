@@ -1,11 +1,14 @@
 @import "breakpoints";
 
-
 div.container {
   margin-top: 30px;
   margin-bottom: 30px;
 
-
+  .card {
+    @include xs {
+      margin-bottom: 20px;
+    }
+  }
 
   .row {
     margin-bottom: 10px;
@@ -18,18 +21,19 @@ div.container {
       .col-6 {
         @include xs {
           width: 100%;
+          margin: 20px 0;
         }
-
       }
 
-      app-card {
+      div-card {
         @include xs {
-          margin-bottom: 10px;
+          margin-bottom: 20px;
         }
       }
     }
-  }}
-div.menu{
+  }
+}
+div.menu {
   background-color: black;
   display: flex;
   justify-content: space-around;
@@ -43,9 +47,8 @@ div.menu{
     font-size: 10px;
   }
 
-
-
-  a{  padding: 15px;
+  a {
+    padding: 15px;
   }
 }
 video {
