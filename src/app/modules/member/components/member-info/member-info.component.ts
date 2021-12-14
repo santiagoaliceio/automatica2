@@ -35,8 +35,8 @@ export class MemberInfoComponent implements OnInit {
       nombre: 'Enrique Sosa',
       bannerImg: './assets/images/garza/garza-banner.jpg',
       imagen1: './assets/images/garza/1.png',
-      imagen2: 'img2',
-      imagen3: 'img3',
+      imagen2: './assets/images/garza/2.png',
+      imagen3: './assets/images/garza/3.png',
       imagen4: './assets/images/garza/4.png',
     },
     {
